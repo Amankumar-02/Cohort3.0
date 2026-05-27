@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASTRO. Winter Armor</title>
+  <!-- Phosphor Icons for UI elements -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- Inter Font for clean, modern typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="page-wrapper">
+    <div class="main-container">
+      
+      <!-- HEADER -->
+      <header class="header">
+        <div class="logo">
+          <div>ASTRO<span class="dot">.</span></div>
+          <nav class="nav-links">
+            <a href="#">PRODUCTS</a>
+            <a href="#">CATEGORY</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT</a>
+          </nav>
+        </div>
+        <div class="header-icons">
+          <i class="ph ph-magnifying-glass"></i>
+          <i class="ph ph-shopping-cart"></i>
+          <i class="ph ph-user"></i>
+        </div>
+      </header>
+
+      <!-- MAIN HERO SECTION -->
+      <main class="hero">
+        
+        <!-- Left Column: Details -->
+        <section class="col-left">
+          <div class="title-wrapper">
+            <!-- Absolute positioning used here -->
+            <span class="badge-new">NEW</span>
+            <h1 class="product-title">
+              ASTRO<br>
+              WINTER<br>
+              ARMOR <span class="accent">II</span>
+            </h1>
+          </div>
+          <p class="price">$560</p>
+          
+          <div class="description-block">
+            <h3>DESCRIPTION</h3>
+            <p>A next-gen cold war jacket. The essence of retro style and the resilience you need for extreme winter conditions. Engineered to provide versatile function for your winter wardrobe, accented with strategic utility details.</p>
+            <a href="#" class="read-more">READ MORE <i class="ph ph-caret-right" style="color: #d95b19;"></i></a>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <span>MATERIAL & CARE</span>
+              <i class="ph ph-caret-down"></i>
+            </div>
+            <div class="accordion-item">
+              <span>SHIPPING & RETURNS</span>
+              <i class="ph ph-caret-down"></i>
+            </div>
+          </div>
+        </section>
+
+        <!-- Middle Column: Product Image -->
+        <section class="col-center">
+          <div class="image-container">
+            <!-- Replace with actual jacket image -->
+            <img src="./assets/jacket.png" alt="Astro Winter Armor Jacket" class="main-jacket">
+          </div>
+          <div class="product-badges">
+            <!-- <span class="feature-badge"><i class="ph ph-snowflake"></i> EXTREME WARMTH</span> -->
+            <span class="feature-badge"><img src="./assets/snow-icon.png" width="36px" height="36px" alt=""> EXTREME WARMTH</span>
+            <!-- <span class="feature-badge"><i class="ph ph-wind"></i> WIND RESISTANT</span> -->
+            <span class="feature-badge"><img src="./assets/shield-icon.png" width="36px" height="36px" alt=""> WIND RESISTANT</span>
+            <!-- <span class="feature-badge"><i class="ph ph-feather"></i> LIGHTWEIGHT</span> -->
+            <span class="feature-badge"><img src="./assets/leaf-icon.png" width="36px" height="36px" alt=""> LIGHTWEIGHT</span>
+          </div>
+        </section>
+
+        <!-- Right Column: Cart Actions -->
+        <section class="col-right">
+          <!-- Size Selector -->
+          <div class="selector-group">
+            <h3>SIZE</h3>
+            <div class="size-options">
+              <button class="size-btn">S</button>
+              <button class="size-btn active">M</button>
+              <button class="size-btn">L</button>
+              <button class="size-btn">XL</button>
+            </div>
+            <a href="#" class="size-guide">SIZE GUIDE <i class="ph ph-caret-right" style="color: #d95b19;"></i></a>
+          </div>
+
+          <!-- Color Selector -->
+          <div class="selector-group">
+            <h3>COLOR</h3>
+            <div class="color-grid">
+              <div class="color-item">
+                <img src="./assets/beigej.png" alt="Beige">
+                <span>BEIGE</span>
+              </div>
+              <div class="color-item">
+                <img src="./assets/redj.png" alt="Red">
+                <span>RED</span>
+              </div>
+              <div class="color-item">
+                <img src="./assets/blackj.png" alt="Black">
+                <span>BLACK</span>
+              </div>
+              <div class="color-item">
+                <img src="./assets/whitej.png" alt="White">
+                <span>WHITE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="action-buttons">
+            <button class="btn-secondary"><i class="ph ph-heart"></i> ADD TO WISHLIST</button>
+            <button class="btn-primary">ADD TO BAG <i class="ph ph-handbag"></i></button>
+          </div>
+        </section>
+      </main>
+
+      <!-- SECONDARY FEATURES ROW -->
+      <section class="feature-cards">
+        <div class="card">
+          <img src="./assets/option11.png" alt="Water-repellent">
+          <div class="card-content">
+            <h4>3X<br>WATER-REPELLENT</h4>
+            <p>The fabric repels rain, snow and moisture while keeping you dry and comfortable.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/option22.png" alt="Puffer">
+          <div class="card-content">
+            <h4>3D AREAS<br>PUFFERED</h4>
+            <p>Strategically padded zones trap heat and maximize insulation without the bulk.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/option33.png" alt="Insulation">
+          <div class="card-content">
+            <h4>INSULATION</h4>
+            <p>Advanced thermal filling locks in warmth up to -30°C for extreme conditions.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/option44.png" alt="Pockets">
+          <div class="card-content">
+            <h4>UTILITY<br>POCKETS</h4>
+            <p>Multi-functional pockets for secure storage on the go.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER TRUST BAR -->
+      <footer class="trust-bar">
+        <div class="trust-item">
+          <i class="ph ph-intersect"></i>
+          <div>
+            <h5>PREMIUM FABRICS</h5>
+            <p>Durable, high-performance materials.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <i class="ph ph-shield-plus"></i>
+          <div>
+            <h5>THERMAL PROTECTION</h5>
+            <p>Built for extreme winter climates.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <i class="ph ph-target" style="color: #d95b19;"></i>
+          <div>
+            <h5>DESIGNED FOR FUNCTION</h5>
+            <p>Every detail serves a purpose.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <i class="ph ph-star" style="color: #d95b19;"></i>
+          <div>
+            <h5>LIMITED EDITION</h5>
+            <p>Exclusive drops, limited quantities.</p>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+</body>
+</html>
