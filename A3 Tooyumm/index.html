@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SunMall - Potato Chips</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo">
+        <!-- Using a handwriting font for the logo simulation -->
+        <!-- <span class="logo-text">SunMall</span> -->
+         <img src="./assets/logo.png" width="160px" alt="">
+      </div>
+      
+      <nav class="nav">
+        <ul>
+          <li class="active">HOME</li>
+          <li>ABOUT</li>
+          <li>CHIPS</li>
+          <li>SERVICES</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="search-bar">
+          <i class="ph ph-magnifying-glass search-icon"></i>
+          <input type="text" placeholder="Search for chips...">
+          <div class="divider"></div>
+          <div class="cart-wrapper">
+            <i class="ph-fill ph-shopping-bag cart-icon"></i>
+            <span class="cart-badge">4</span> <!-- Absolute Positioning -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN HERO -->
+    <main class="hero">
+      
+      <!-- LEFT COLUMN: Content -->
+      <section class="hero-content">
+        <div class="tag-pill">
+          <i class="ph-fill ph-star"></i> 100% REAL INGREDIENTS
+        </div>
+        
+        <h1 class="main-title">
+          EAT OUR <span class="highlight-green">GRILLED</span><br>
+          POTATO CHIPS
+        </h1>
+        
+        <p class="description">
+          Satisfying savory Chinese meat sauce chips without any hard-to-find ingredients.
+        </p>
+
+        <div class="action-row">
+          <button class="btn-add-cart">
+            <div class="icon-circle"><i class="ph-fill ph-basket cart-icon"></i></div>
+            ADD TO CART
+          </button>
+          
+          <div class="quantity-selector">
+            <button class="qty-btn">-</button>
+            <span class="qty-number">2</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+        </div>
+
+        <div class="features-row">
+          <div class="feature">
+            <div class="f-icon green"><i class="ph ph-leaf"></i></div>
+            <div class="f-text">
+              <strong>100% NATURAL</strong>
+              <span>No artificial flavors</span>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="f-icon orange"><i class="ph-fill ph-fire"></i></div>
+            <div class="f-text">
+              <strong>OVEN GRILLED</strong>
+              <span>Not fried</span>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="f-icon pink"><i class="ph-fill ph-heart"></i></div>
+            <div class="f-text">
+              <strong>TASTY & CRUNCHY</strong>
+              <span>Irresistible bite</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CENTER COLUMN: Visuals -->
+      <section class="hero-visual">
+        <div class="visual-container">
+          <img src="./assets/main-product.png" alt="Potato Chips Bag" class="main-bag">
+        </div>
+      </section>
+
+      <!-- RIGHT COLUMN: Flavors List -->
+      <section class="hero-flavors">
+        <div class="flavor-list">
+          <div class="dashed-line"></div> <!-- Absolute Positioning -->
+          
+          <div class="flavor-item">
+            <div class="f-dot dot-green"><img src="./assets/chilli.png" width="50px" alt=""></div>
+            <div class="f-info">
+              <h4>EXTRA CHILI</h4>
+              <p>Zha jiang mian is crazy hot even when it's simplified</p>
+            </div>
+          </div>
+          
+          <div class="flavor-item">
+            <div class="f-dot dot-red"><img src="./assets/meat.png" width="50px" alt=""></div>
+            <div class="f-info">
+              <h4>BEEF FLAVOUR</h4>
+              <p>Comes with a lot extra energy calories and Oxizen</p>
+            </div>
+          </div>
+          
+          <div class="flavor-item">
+            <div class="f-dot dot-yellow"><img src="./assets/fire.png" width="50px" alt=""></div>
+            <div class="f-info">
+              <h4>SMOKEY SAUCE</h4>
+              <p>The meat sauce is kind of reminiscent of a Chinese.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- BOTTOM SECTION: Top Flavours -->
+    <section class="bottom-section">
+      <div class="top-flavours-header">
+        <h2>OUR TOP<br>FLAVOURS</h2>
+        <div class="nav-arrows">
+          <button class="arrow-btn"><i class="ph ph-arrow-left" style="color: grey;"></i></button>
+          <button class="arrow-btn" style="background-color: white;"><i class="ph-bold ph-arrow-right" style="color: #258f4a;"></i></button>
+        </div>
+      </div>
+
+      <div class="product-cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="./assets/p1.png" alt="Black Barbecue">
+          </div>
+          <div class="card-details">
+            <h3>BLACK BARBECUE</h3>
+            <div class="stars">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i> <span>(4.8)</span>
+            </div>
+            <div class="price">$12.30</div>
+            <button class="btn-order">ORDER NOW <i class="ph ph-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="./assets/p2.png" alt="Mr. Potato">
+          </div>
+          <div class="card-details">
+            <h3>MR. POTATO</h3>
+            <div class="stars">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i> <span>(4.9)</span>
+            </div>
+            <div class="price">$15.89</div>
+            <button class="btn-order">ORDER NOW <i class="ph ph-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="./assets/p3.png" alt="Tom Yomm">
+          </div>
+          <div class="card-details">
+            <h3>TOM YOMM</h3>
+            <div class="stars">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i> <span>(4.7)</span>
+            </div>
+            <div class="price">$11.50</div>
+            <button class="btn-order">ORDER NOW <i class="ph ph-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
